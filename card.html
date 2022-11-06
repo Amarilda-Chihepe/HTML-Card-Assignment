@@ -5,14 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Card</title>
-    <link rel="Stylesheet" href="card.css">
+
+    <style>
+        .container{
+            width: 350px;
+            background-color: #d8eef7;
+            border-radius: 20px;
+            
+        }
+
+        .popular{
+            margin-top: 0px;
+            height: 50px;
+            background-color: #205e91;
+            display: flex;
+            align-items:center
+            }
+
+        .popular p{
+            padding-left: 20px;
+            padding-top: 15px;
+            font-size: 15;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        
+        }
+
+        h3{
+            padding-left: 20px;
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .pro{
+            padding-left: 20px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .price{
+            margin-top: 70px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+        }
+
+        .price1{
+            font-size: 65px;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .price2{
+            padding-left: 30px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 20px;
+        }
+
+        .billed, .list-plus{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif; 
+            padding-left: 20px; 
+        }
+
+
+        input{
+            
+            font-size: 15px;
+            color: white;
+            border-radius: 30px;
+            background-color: #205e91;
+            border: 0px;
+            height: 50px;
+            width: 230px;
+            margin-left: 60px;
+
+        }
+
+        ul li{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif; 
+            line-height: 30px;
+        }
+
+
+    </style>
 </head>
-<body>
+
+<body style=" display: flex; justify-content: center;">
     <div class="container">
         <div class="popular">
             <p>Most popular</p>
         </div>
-        <div class="packet">
+
+        <div class="packet" style="  margin-bottom:100px ">
             <h3>Pro</h3>
             <p class="pro">For teams and departments who need to build connected
                 apps to power their most important processes</p>
@@ -20,15 +106,17 @@
                 <div class="price1">
                     $20
                 </div>
+
                 <div class="price2">
                     per seat /month billed annually
                 </div>
             
             </div>
-            <p class="billed"><strong>$24</strong> billed monthly</p>
+
+            <p class="billed" style="margin-bottom: 25px;"><strong>$24</strong> billed monthly</p>
             <input type="button" value="Try For Free">
             
-            <p class="list-plus">Everything in Plus, plus:</p>
+            <p class="list-plus" style="margin-top: 20px;">Everything in Plus, plus:</p>
             <div class="list">
                 <ul>
                     <li>10 <u>extensions</u> per base</li>
